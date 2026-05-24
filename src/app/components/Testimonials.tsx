@@ -43,7 +43,7 @@ const testimonials = [
 export function Testimonials() {
   return (
     <section className="py-16 md:py-24 bg-muted/30">
-      <div className="container max-w-screen-xl px-4 md:px-6">
+      <div className="w-full mx-auto max-w-screen-xl px-4 md:px-6">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl">
             What Our Community Says

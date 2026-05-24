@@ -162,7 +162,7 @@ export function FindWorkPage() {
     <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="border-b border-border bg-background/95 backdrop-blur">
-        <div className="container flex h-16 max-w-screen-xl items-center justify-between px-4 md:px-6">
+        <div className="w-full mx-auto flex h-16 max-w-screen-xl items-center justify-between px-4 md:px-6">
           <button 
             onClick={() => navigate('home')}
             className="flex items-center space-x-2 text-muted-foreground hover:text-foreground transition-colors"
@@ -180,7 +180,7 @@ export function FindWorkPage() {
         </div>
       </header>
 
-      <div className="container max-w-screen-xl px-4 py-8 md:px-6">
+      <div className="w-full mx-auto max-w-screen-xl px-4 py-8 md:px-6">
         {/* Page Header */}
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-foreground mb-2">Find Work</h1>

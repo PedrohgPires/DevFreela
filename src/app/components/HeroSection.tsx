@@ -6,7 +6,7 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 export function HeroSection() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-background to-muted/20 py-20 md:py-32">
-      <div className="container relative z-10 max-w-screen-xl px-4 md:px-6">
+      <div className="w-full mx-auto relative z-10 max-w-screen-xl px-4 md:px-6">
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="text-4xl font-bold tracking-tight text-foreground md:text-6xl lg:text-7xl">
             Contrate Especialistas ou Seja Contratado por suas Habilidades

@@ -45,7 +45,7 @@ export function SignUpPage() {
     <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="border-b border-border">
-        <div className="container flex h-16 max-w-screen-xl items-center justify-between px-4 md:px-6">
+        <div className="w-full mx-auto flex h-16 max-w-screen-xl items-center justify-between px-4 md:px-6">
           <button 
             onClick={() => navigate('home')}
             className="flex items-center space-x-2 text-muted-foreground hover:text-foreground transition-colors"

@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 export function CallToAction() {
   return (
     <section className="py-16 md:py-24">
-      <div className="container max-w-screen-xl px-4 md:px-6">
+      <div className="w-full mx-auto max-w-screen-xl px-4 md:px-6">
         <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary to-primary/80 px-8 py-16 text-center md:px-16 md:py-24">
           {/* Background Pattern */}
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJtMzYgMzQgdjItaDIgdjJoLTIgdjJoMiB2Mmgtdi0yaDIgdi0yaC0ydi0yaDJ6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-20"></div>
