@@ -17,7 +17,7 @@ function figmaAssetResolver() {
 
 export default defineConfig({
   // Esta linha corrige o problema do caminho no GitHub Pages
-  base: "./", 
+  base: "/devfreela/", 
   
   plugins: [
     figmaAssetResolver(),
