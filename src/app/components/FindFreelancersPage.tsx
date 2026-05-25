@@ -12,16 +12,16 @@ const freelancers = [
   {
     id: 1,
     name: "Sarah Chen",
-    title: "Full-Stack Developer",
+    title: "Desenvolvedora Full-Stack",
     location: "San Francisco, CA",
     avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face",
     rating: 4.9,
     reviews: 127,
     hourlyRate: 85,
     skills: ["React", "Node.js", "Python", "AWS", "MongoDB"],
-    description: "Experienced full-stack developer with 6+ years building scalable web applications. Specialized in React, Node.js, and cloud architecture.",
+    description: "Desenvolvedora full-stack experiente com mais de 6 anos construindo aplicações web escaláveis. Especializada em React, Node.js e arquitetura em nuvem.",
     completedJobs: 89,
-    responseTime: "1 hour",
+    responseTime: "1 hora",
     successRate: "98%",
     featured: true,
     online: true,
@@ -33,16 +33,16 @@ const freelancers = [
   {
     id: 2,
     name: "Marcus Rodriguez",
-    title: "UI/UX Designer",
-    location: "New York, NY",
+    title: "Designer UI/UX",
+    location: "Nova York, NY",
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
     rating: 4.8,
     reviews: 203,
     hourlyRate: 75,
-    skills: ["Figma", "Adobe XD", "Prototyping", "User Research", "Design Systems"],
-    description: "Creative designer specializing in user-centered design and brand identity. Proven track record of improving user engagement.",
+    skills: ["Figma", "Adobe XD", "Prototipagem", "Pesquisa de Usuário", "Sistemas de Design"],
+    description: "Designer criativo especializado em design centrado no usuário e identidade de marca. Histórico comprovado de melhoria no engajamento do usuário.",
     completedJobs: 156,
-    responseTime: "2 hours",
+    responseTime: "2 horas",
     successRate: "95%",
     featured: true,
     online: false,
@@ -54,14 +54,14 @@ const freelancers = [
   {
     id: 3,
     name: "Emily Watson",
-    title: "Content Writer & SEO Specialist",
-    location: "London, UK",
+    title: "Redatora e Especialista em SEO",
+    location: "Londres, Reino Unido",
     avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
     rating: 5.0,
     reviews: 94,
     hourlyRate: 45,
-    skills: ["SEO Writing", "Copywriting", "Content Strategy", "WordPress", "Google Analytics"],
-    description: "Professional writer creating engaging content that drives results. Specialized in SEO optimization and conversion copywriting.",
+    skills: ["Escrita SEO", "Copywriting", "Estratégia de Conteúdo", "WordPress", "Google Analytics"],
+    description: "Redatora profissional criando conteúdo envolvente que gera resultados. Especializada em otimização SEO e copywriting de conversão.",
     completedJobs: 78,
     responseTime: "30 min",
     successRate: "100%",
@@ -74,16 +74,16 @@ const freelancers = [
   {
     id: 4,
     name: "David Kim",
-    title: "Digital Marketing Expert",
-    location: "Toronto, CA",
+    title: "Especialista em Marketing Digital",
+    location: "Toronto, Canadá",
     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
     rating: 4.7,
     reviews: 156,
     hourlyRate: 65,
-    skills: ["Google Ads", "Facebook Ads", "Analytics", "Email Marketing", "Conversion Optimization"],
-    description: "Growth-focused marketer with proven track record of increasing ROI. Expert in paid advertising and performance marketing.",
+    skills: ["Google Ads", "Facebook Ads", "Analytics", "Email Marketing", "Otimização de Conversão"],
+    description: "Profissional de marketing focado em crescimento com histórico comprovado de aumento de ROI. Especialista em publicidade paga e marketing de performance.",
     completedJobs: 112,
-    responseTime: "1 hour",
+    responseTime: "1 hora",
     successRate: "92%",
     featured: false,
     online: true,
@@ -94,16 +94,16 @@ const freelancers = [
   {
     id: 5,
     name: "Ana Silva",
-    title: "Data Scientist",
-    location: "São Paulo, Brazil",
+    title: "Cientista de Dados",
+    location: "São Paulo, Brasil",
     avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face",
     rating: 4.9,
     reviews: 67,
     hourlyRate: 55,
-    skills: ["Python", "Machine Learning", "Data Visualization", "SQL", "TensorFlow"],
-    description: "Data scientist with expertise in machine learning and predictive analytics. Turning complex data into actionable insights.",
+    skills: ["Python", "Machine Learning", "Visualização de Dados", "SQL", "TensorFlow"],
+    description: "Cientista de dados com experiência em aprendizado de máquina e análise preditiva. Transformando dados complexos em insights acionáveis.",
     completedJobs: 43,
-    responseTime: "3 hours",
+    responseTime: "3 horas",
     successRate: "96%",
     featured: false,
     online: false,
@@ -114,16 +114,16 @@ const freelancers = [
   {
     id: 6,
     name: "James Thompson",
-    title: "Mobile App Developer",
-    location: "Melbourne, AU",
+    title: "Desenvolvedor de Apps Móveis",
+    location: "Melbourne, Austrália",
     avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
     rating: 4.6,
     reviews: 89,
     hourlyRate: 70,
     skills: ["React Native", "Flutter", "iOS", "Android", "Firebase"],
-    description: "Mobile app developer specializing in cross-platform solutions. Built 50+ apps with millions of downloads.",
+    description: "Desenvolvedor de aplicativos móveis especializado em soluções multiplataforma. Criou mais de 50 aplicativos com milhões de downloads.",
     completedJobs: 67,
-    responseTime: "4 hours",
+    responseTime: "4 horas",
     successRate: "94%",
     featured: false,
     online: true,
@@ -134,21 +134,21 @@ const freelancers = [
 ];
 
 const categories = [
-  "All Skills",
-  "Web Development",
-  "Mobile Development",
-  "Design & Creative", 
-  "Writing & Content",
-  "Digital Marketing",
-  "Data Science",
-  "DevOps & Cloud"
+  "Todas as Habilidades",
+  "Desenvolvimento Web",
+  "Desenvolvimento Mobile",
+  "Design & Criativo", 
+  "Redação & Conteúdo",
+  "Marketing Digital",
+  "Ciência de Dados",
+  "DevOps & Nuvem"
 ];
 
 export function FindFreelancersPage() {
   const { navigate } = useRouter();
   const [searchQuery, setSearchQuery] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('All Skills');
-  const [budgetRange, setBudgetRange] = useState('All Budgets');
+  const [selectedCategory, setSelectedCategory] = useState('Todas as Habilidades');
+  const [budgetRange, setBudgetRange] = useState('Todos os Orçamentos');
   const [savedFreelancers, setSavedFreelancers] = useState<number[]>([]);
 
   const toggleSaveFreelancer = (freelancerId: number) => {
@@ -164,15 +164,15 @@ export function FindFreelancersPage() {
                          freelancer.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
                          freelancer.skills.some(skill => skill.toLowerCase().includes(searchQuery.toLowerCase()));
     
-    const matchesCategory = selectedCategory === 'All Skills' || 
+    const matchesCategory = selectedCategory === 'Todas as Habilidades' || 
                            freelancer.skills.some(skill => {
                              switch(selectedCategory) {
-                               case 'Web Development': return ['React', 'Node.js', 'Python', 'AWS'].includes(skill);
-                               case 'Design & Creative': return ['Figma', 'Adobe XD', 'Prototyping'].includes(skill);
-                               case 'Writing & Content': return ['SEO Writing', 'Copywriting', 'Content Strategy'].includes(skill);
-                               case 'Digital Marketing': return ['Google Ads', 'Facebook Ads', 'Analytics'].includes(skill);
-                               case 'Data Science': return ['Python', 'Machine Learning', 'Data Visualization'].includes(skill);
-                               case 'Mobile Development': return ['React Native', 'Flutter', 'iOS', 'Android'].includes(skill);
+                               case 'Desenvolvimento Web': return ['React', 'Node.js', 'Python', 'AWS'].includes(skill);
+                               case 'Design & Criativo': return ['Figma', 'Adobe XD', 'Prototipagem'].includes(skill);
+                               case 'Redação & Conteúdo': return ['Escrita SEO', 'Copywriting', 'Estratégia de Conteúdo'].includes(skill);
+                               case 'Marketing Digital': return ['Google Ads', 'Facebook Ads', 'Analytics'].includes(skill);
+                               case 'Ciência de Dados': return ['Python', 'Machine Learning', 'Visualização de Dados'].includes(skill);
+                               case 'Desenvolvimento Mobile': return ['React Native', 'Flutter', 'iOS', 'Android'].includes(skill);
                                default: return true;
                              }
                            });
@@ -182,7 +182,6 @@ export function FindFreelancersPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
       <header className="border-b border-border bg-background/95 backdrop-blur">
         <div className="w-full mx-auto flex h-16 max-w-screen-xl items-center justify-between px-4 md:px-6">
           <button 
@@ -190,7 +189,7 @@ export function FindFreelancersPage() {
             className="flex items-center space-x-2 text-muted-foreground hover:text-foreground transition-colors"
           >
             <ArrowLeft className="h-4 w-4" />
-            <span className="text-sm">Back to Home</span>
+            <span className="text-sm">Voltar para a Home</span>
           </button>
           
           <div className="flex items-center space-x-2">
@@ -203,20 +202,18 @@ export function FindFreelancersPage() {
       </header>
 
       <div className="w-full mx-auto max-w-screen-xl px-4 py-8 md:px-6">
-        {/* Page Header */}
         <div className="mb-8">
-          <h1 className="text-3xl font-bold text-foreground mb-2">Find Freelancers</h1>
-          <p className="text-muted-foreground">Discover talented professionals for your next project</p>
+          <h1 className="text-3xl font-bold text-foreground mb-2">Encontrar Freelancers</h1>
+          <p className="text-muted-foreground">Descubra profissionais talentosos para o seu próximo projeto</p>
         </div>
 
-        {/* Search and Filters */}
         <div className="mb-8 space-y-4">
           <div className="flex flex-col gap-4 md:flex-row md:items-center">
             <div className="relative flex-1">
               <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
               <Input
                 type="text"
-                placeholder="Search for freelancers, skills, or services..."
+                placeholder="Buscar freelancers, habilidades ou serviços..."
                 className="pl-10"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
@@ -224,14 +221,14 @@ export function FindFreelancersPage() {
             </div>
             <Button variant="outline" className="md:w-auto">
               <Filter className="mr-2 h-4 w-4" />
-              Advanced Filters
+              Filtros Avançados
             </Button>
           </div>
 
           <div className="flex flex-wrap gap-4">
             <Select value={selectedCategory} onValueChange={setSelectedCategory}>
               <SelectTrigger className="w-[200px]">
-                <SelectValue placeholder="Skill Category" />
+                <SelectValue placeholder="Categoria de Habilidade" />
               </SelectTrigger>
               <SelectContent>
                 {categories.map((category) => (
@@ -244,49 +241,47 @@ export function FindFreelancersPage() {
 
             <Select value={budgetRange} onValueChange={setBudgetRange}>
               <SelectTrigger className="w-[200px]">
-                <SelectValue placeholder="Hourly Rate" />
+                <SelectValue placeholder="Tarifa por Hora" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="All Budgets">All Rates</SelectItem>
-                <SelectItem value="Under $25">Under $25/hr</SelectItem>
+                <SelectItem value="Todos os Orçamentos">Todas as Tarifas</SelectItem>
+                <SelectItem value="Abaixo de $25">Abaixo de $25/hr</SelectItem>
                 <SelectItem value="$25-$50">$25 - $50/hr</SelectItem>
                 <SelectItem value="$50-$100">$50 - $100/hr</SelectItem>
-                <SelectItem value="Over $100">Over $100/hr</SelectItem>
+                <SelectItem value="Acima de $100">Acima de $100/hr</SelectItem>
               </SelectContent>
             </Select>
 
             <Select defaultValue="all">
               <SelectTrigger className="w-[150px]">
-                <SelectValue placeholder="Availability" />
+                <SelectValue placeholder="Disponibilidade" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="all">All</SelectItem>
-                <SelectItem value="online">Online Now</SelectItem>
-                <SelectItem value="available">Available</SelectItem>
+                <SelectItem value="all">Todos</SelectItem>
+                <SelectItem value="online">Online Agora</SelectItem>
+                <SelectItem value="available">Disponível</SelectItem>
               </SelectContent>
             </Select>
           </div>
         </div>
 
-        {/* Results Header */}
         <div className="mb-6 flex items-center justify-between">
           <p className="text-muted-foreground">
-            {filteredFreelancers.length} freelancer{filteredFreelancers.length !== 1 ? 's' : ''} found
+            {filteredFreelancers.length} freelancer{filteredFreelancers.length !== 1 ? 's' : ''} encontrado{filteredFreelancers.length !== 1 ? 's' : ''}
           </p>
           <Select defaultValue="rating">
-            <SelectTrigger className="w-[150px]">
+            <SelectTrigger className="w-[180px]">
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="rating">Highest Rated</SelectItem>
-              <SelectItem value="rate-low">Lowest Rate</SelectItem>
-              <SelectItem value="rate-high">Highest Rate</SelectItem>
-              <SelectItem value="newest">Newest</SelectItem>
+              <SelectItem value="rating">Melhor Avaliados</SelectItem>
+              <SelectItem value="rate-low">Menor Tarifa</SelectItem>
+              <SelectItem value="rate-high">Maior Tarifa</SelectItem>
+              <SelectItem value="newest">Mais Recentes</SelectItem>
             </SelectContent>
           </Select>
         </div>
 
-        {/* Freelancer Listings */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {filteredFreelancers.map((freelancer) => (
             <Card key={freelancer.id} className="hover:shadow-md transition-shadow">
@@ -333,12 +328,11 @@ export function FindFreelancersPage() {
               </CardHeader>
 
               <CardContent className="pt-0 space-y-4">
-                {/* Rating and Stats */}
                 <div className="flex items-center justify-between text-sm">
                   <div className="flex items-center gap-1">
                     <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                     <span className="font-medium">{freelancer.rating}</span>
-                    <span className="text-muted-foreground">({freelancer.reviews} reviews)</span>
+                    <span className="text-muted-foreground">({freelancer.reviews} avaliações)</span>
                   </div>
                   <div className="flex items-center gap-1">
                     <DollarSign className="h-4 w-4 text-primary" />
@@ -346,12 +340,10 @@ export function FindFreelancersPage() {
                   </div>
                 </div>
 
-                {/* Description */}
                 <p className="text-sm text-muted-foreground line-clamp-2">
                   {freelancer.description}
                 </p>
 
-                {/* Skills */}
                 <div className="flex flex-wrap gap-1">
                   {freelancer.skills.slice(0, 4).map((skill) => (
                     <Badge key={skill} variant="secondary" className="text-xs">
@@ -360,34 +352,32 @@ export function FindFreelancersPage() {
                   ))}
                   {freelancer.skills.length > 4 && (
                     <Badge variant="outline" className="text-xs">
-                      +{freelancer.skills.length - 4} more
+                      +{freelancer.skills.length - 4} mais
                     </Badge>
                   )}
                 </div>
 
-                {/* Portfolio Preview */}
                 {freelancer.portfolio.length > 0 && (
                   <div className="flex gap-2">
                     {freelancer.portfolio.slice(0, 2).map((image, index) => (
                       <ImageWithFallback
                         key={index}
                         src={image}
-                        alt={`Portfolio ${index + 1}`}
+                        alt={`Portfólio ${index + 1}`}
                         className="h-16 w-24 rounded object-cover"
                       />
                     ))}
                   </div>
                 )}
 
-                {/* Stats */}
                 <div className="grid grid-cols-3 gap-4 text-xs text-center">
                   <div>
                     <p className="font-medium text-card-foreground">{freelancer.completedJobs}</p>
-                    <p className="text-muted-foreground">Jobs</p>
+                    <p className="text-muted-foreground">Projetos</p>
                   </div>
                   <div>
                     <p className="font-medium text-card-foreground">{freelancer.successRate}</p>
-                    <p className="text-muted-foreground">Success</p>
+                    <p className="text-muted-foreground">Sucesso</p>
                   </div>
                   <div className="flex items-center justify-center gap-1">
                     <Clock className="h-3 w-3 text-muted-foreground" />
@@ -395,14 +385,13 @@ export function FindFreelancersPage() {
                   </div>
                 </div>
 
-                {/* Actions */}
                 <div className="flex gap-2 pt-2">
                   <Button size="sm" className="flex-1">
                     <MessageCircle className="mr-1 h-3 w-3" />
-                    Contact
+                    Contatar
                   </Button>
                   <Button variant="outline" size="sm" className="flex-1">
-                    View Profile
+                    Ver Perfil
                   </Button>
                 </div>
               </CardContent>
@@ -410,10 +399,9 @@ export function FindFreelancersPage() {
           ))}
         </div>
 
-        {/* Load More */}
         <div className="mt-8 text-center">
           <Button variant="outline" size="lg">
-            Load More Freelancers
+            Carregar Mais Freelancers
           </Button>
         </div>
       </div>

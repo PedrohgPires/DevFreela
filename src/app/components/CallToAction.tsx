@@ -18,16 +18,18 @@ export function CallToAction() {
 
             <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
               <Button 
-                size="lg" 
-                variant="secondary"
-                className="bg-background text-foreground hover:bg-background/90"
-              >
-                Cadastrar como Freelancer
-              </Button>
+  size="lg" 
+  variant="secondary"
+  // Alterado de 'text-blue-700' para 'text-primary' 
+  // (ou você pode usar 'text-primary-foreground' se quiser que fiquem idênticos)
+  className="bg-white text-primary hover:bg-gray-100"
+>
+  Cadastrar como Freelancer
+</Button>
               <Button 
-                size="lg" 
-                variant="outline"
-                className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10"
+                 size="lg" 
+  variant="secondary"
+                 className="bg-white text-primary hover:bg-gray-100"
               >
                 Contratar Agora
               </Button>

@@ -79,60 +79,55 @@ export function FeaturedFreelancers() {
           {freelancers.map((freelancer) => (
             <div
               key={freelancer.id}
-              className="group relative overflow-hidden rounded-lg border border-border bg-card p-6 transition-all duration-200 hover:-translate-y-1 hover:shadow-lg"
+              className="group relative flex flex-col h-full overflow-hidden rounded-lg border border-border bg-card p-6 transition-all duration-200 hover:-translate-y-1 hover:shadow-lg"
             >
-              {/* Avatar and Basic Info */}
-              <div className="text-center">
-                <ImageWithFallback
-                  src={freelancer.avatar}
-                  alt={freelancer.name}
-                  className="mx-auto h-16 w-16 rounded-full object-cover"
-                />
-                <h3 className="mt-4 font-semibold text-card-foreground">{freelancer.name}</h3>
-                <p className="text-sm text-muted-foreground">{freelancer.title}</p>
-                
-                {/* Location */}
-                <div className="mt-2 flex items-center justify-center text-xs text-muted-foreground">
-                  <MapPin className="mr-1 h-3 w-3" />
-                  {freelancer.location}
+              <div className="flex-1">
+                <div className="text-center">
+                  <ImageWithFallback
+                    src={freelancer.avatar}
+                    alt={freelancer.name}
+                    className="mx-auto h-16 w-16 rounded-full object-cover"
+                  />
+                  <h3 className="mt-4 font-semibold text-card-foreground">{freelancer.name}</h3>
+                  <p className="text-sm text-muted-foreground">{freelancer.title}</p>
+                  
+                  <div className="mt-2 flex items-center justify-center text-xs text-muted-foreground">
+                    <MapPin className="mr-1 h-3 w-3" />
+                    {freelancer.location}
+                  </div>
+
+                  <div className="mt-2 flex items-center justify-center space-x-1">
+                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                    <span className="text-sm font-medium">{freelancer.rating}</span>
+                    <span className="text-xs text-muted-foreground">({freelancer.reviews} avaliações)</span>
+                  </div>
                 </div>
 
-                {/* Rating */}
-                <div className="mt-2 flex items-center justify-center space-x-1">
-                  <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                  <span className="text-sm font-medium">{freelancer.rating}</span>
-                  <span className="text-xs text-muted-foreground">({freelancer.reviews} avaliações)</span>
+                <div className="mt-4 flex flex-wrap gap-1 justify-center">
+                  {freelancer.skills.map((skill) => (
+                    <Badge key={skill} variant="secondary" className="text-xs">
+                      {skill}
+                    </Badge>
+                  ))}
                 </div>
-              </div>
 
-              {/* Skills */}
-              <div className="mt-4 flex flex-wrap gap-1">
-                {freelancer.skills.map((skill) => (
-                  <Badge key={skill} variant="secondary" className="text-xs">
-                    {skill}
-                  </Badge>
-                ))}
-              </div>
+                <p className="mt-3 text-xs text-muted-foreground line-clamp-2 text-center">
+                  {freelancer.description}
+                </p>
 
-              {/* Description */}
-              <p className="mt-3 text-xs text-muted-foreground line-clamp-2">
-                {freelancer.description}
-              </p>
-
-              {/* Stats */}
-              <div className="mt-4 grid grid-cols-2 gap-4 text-center text-xs">
-                <div>
-                  <p className="font-medium text-card-foreground">{freelancer.completedJobs}</p>
-                  <p className="text-muted-foreground">Projetos</p>
-                </div>
-                <div className="flex items-center justify-center">
-                  <Clock className="mr-1 h-3 w-3 text-muted-foreground" />
-                  <span className="text-muted-foreground">{freelancer.responseTime}</span>
+                <div className="mt-4 grid grid-cols-2 gap-4 text-center text-xs">
+                  <div>
+                    <p className="font-medium text-card-foreground">{freelancer.completedJobs}</p>
+                    <p className="text-muted-foreground">Projetos</p>
+                  </div>
+                  <div className="flex items-center justify-center">
+                    <Clock className="mr-1 h-3 w-3 text-muted-foreground" />
+                    <span className="text-muted-foreground">{freelancer.responseTime}</span>
+                  </div>
                 </div>
               </div>
 
-              {/* Hourly Rate and CTA */}
-              <div className="mt-4 space-y-3">
+              <div className="mt-6 space-y-3">
                 <div className="text-center">
                   <span className="text-lg font-bold text-primary">${freelancer.hourlyRate}</span>
                   <span className="text-sm text-muted-foreground">/hora</span>

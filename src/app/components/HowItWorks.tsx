@@ -4,20 +4,20 @@ const steps = [
   {
     number: 1,
     icon: FileText,
-    title: "Post a Job",
-    description: "Describe your project and get proposals from qualified freelancers within minutes."
+    title: "Publique um Projeto",
+    description: "Descreva seu projeto e receba propostas de freelancers qualificados em poucos minutos."
   },
   {
     number: 2,
     icon: Users,
-    title: "Hire Talent",
-    description: "Review profiles, portfolios, and proposals. Interview and hire the best freelancer for your project."
+    title: "Contrate Talentos",
+    description: "Analise perfis, portfólios e propostas. Entreviste e contrate o melhor freelancer para o seu projeto."
   },
   {
     number: 3,
     icon: CheckCircle,
-    title: "Get Work Done",
-    description: "Collaborate, track progress, and receive high-quality work on time and on budget."
+    title: "Realize o Trabalho",
+    description: "Colabore, acompanhe o progresso e receba um trabalho de alta qualidade dentro do prazo e orçamento."
   }
 ];
 
@@ -27,10 +27,10 @@ export function HowItWorks() {
       <div className="w-full mx-auto max-w-screen-xl px-4 md:px-6">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-            How It Works
+            Como Funciona
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Get your project done in three simple steps
+            Conclua seu projeto em três passos simples
           </p>
         </div>
 

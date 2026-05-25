@@ -5,38 +5,38 @@ const testimonials = [
   {
     id: 1,
     name: "Jessica Miller",
-    role: "Startup Founder",
+    role: "Fundadora de Startup",
     company: "TechFlow",
     avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop&crop=face",
     rating: 5,
-    content: "DevFreela helped me find an amazing developer who built our MVP in just 6 weeks. The quality was outstanding and the communication was seamless throughout the project."
+    content: "O DevFreela me ajudou a encontrar um desenvolvedor incrível que construiu nosso MVP em apenas 6 semanas. A qualidade foi excelente e a comunicação foi perfeita durante todo o projeto."
   },
   {
     id: 2,
     name: "Robert Chen",
-    role: "Marketing Director",
+    role: "Diretor de Marketing",
     company: "GrowthCorp",
     avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&h=150&fit=crop&crop=face",
     rating: 5,
-    content: "As a client, I've hired over 20 freelancers through this platform. The talent quality is consistently high, and the project management tools make collaboration effortless."
+    content: "Como cliente, já contratei mais de 20 freelancers através desta plataforma. A qualidade dos talentos é consistentemente alta e as ferramentas de gerenciamento de projetos tornam a colaboração muito fácil."
   },
   {
     id: 3,
     name: "Maria Rodriguez",
-    role: "Freelance Designer",
-    company: "Independent",
+    role: "Designer Freelancer",
+    company: "Independente",
     avatar: "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=150&h=150&fit=crop&crop=face",
     rating: 5,
-    content: "I've been freelancing for 5 years, and this platform has transformed my business. I've connected with amazing clients and built long-term relationships that keep me booked solid."
+    content: "Trabalho como freelancer há 5 anos e esta plataforma transformou o meu negócio. Conectei-me com clientes incríveis e construí relacionamentos de longo prazo que me mantêm com a agenda cheia."
   },
   {
     id: 4,
     name: "Alex Thompson",
-    role: "E-commerce Owner",
+    role: "Dono de E-commerce",
     company: "ShopSmart",
     avatar: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=150&h=150&fit=crop&crop=face",
     rating: 5,
-    content: "The freelancers I've worked with have been professional, skilled, and delivered exactly what we needed. Our website redesign increased conversions by 40%."
+    content: "Os freelancers com quem trabalhei foram profissionais, qualificados e entregaram exatamente o que precisávamos. O redesign do nosso site aumentou as conversões em 40%."
   }
 ];
 
@@ -46,10 +46,10 @@ export function Testimonials() {
       <div className="w-full mx-auto max-w-screen-xl px-4 md:px-6">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-            What Our Community Says
+            O Que Nossa Comunidade Diz
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Trusted by thousands of clients and freelancers worldwide
+            Com a confiança de milhares de clientes e freelancers em todo o mundo
           </p>
         </div>
 
@@ -59,22 +59,22 @@ export function Testimonials() {
               key={testimonial.id}
               className="relative rounded-lg border border-border bg-card p-8 shadow-sm"
             >
-              {/* Quote Icon */}
+              {/* Ícone de Citação */}
               <Quote className="absolute top-4 right-4 h-8 w-8 text-primary/20" />
               
-              {/* Rating */}
+              {/* Avaliação */}
               <div className="flex space-x-1">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                 ))}
               </div>
 
-              {/* Content */}
+              {/* Conteúdo */}
               <p className="mt-4 text-card-foreground leading-relaxed">
                 "{testimonial.content}"
               </p>
 
-              {/* Author */}
+              {/* Autor */}
               <div className="mt-6 flex items-center space-x-4">
                 <ImageWithFallback
                   src={testimonial.avatar}
@@ -84,7 +84,7 @@ export function Testimonials() {
                 <div>
                   <p className="font-semibold text-card-foreground">{testimonial.name}</p>
                   <p className="text-sm text-muted-foreground">
-                    {testimonial.role} at {testimonial.company}
+                    {testimonial.role} na {testimonial.company}
                   </p>
                 </div>
               </div>

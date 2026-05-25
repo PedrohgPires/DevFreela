@@ -22,12 +22,12 @@ import {
 } from 'lucide-react';
 
 const sidebarItems = [
-  { title: "Dashboard", icon: Home, id: "overview" },
-  { title: "Active Projects", icon: Briefcase, id: "projects" },
-  { title: "Posted Jobs", icon: FileText, id: "jobs" },
+  { title: "Painel", icon: Home, id: "overview" },
+  { title: "Projetos Ativos", icon: Briefcase, id: "projects" },
+  { title: "Vagas Publicadas", icon: FileText, id: "jobs" },
   { title: "Freelancers", icon: Users, id: "freelancers" },
-  { title: "Messages", icon: MessageSquare, id: "messages", badge: "3" },
-  { title: "Payments", icon: DollarSign, id: "payments" },
+  { title: "Mensagens", icon: MessageSquare, id: "messages", badge: "3" },
+  { title: "Pagamentos", icon: DollarSign, id: "payments" },
 ];
 
 const mockData = {
@@ -42,37 +42,37 @@ const mockData = {
   activeProjects: [
     {
       id: 1,
-      title: "Mobile App Development",
+      title: "Desenvolvimento de App Mobile",
       freelancer: "Sarah Chen",
       budget: 8000,
       spent: 6000,
       progress: 75,
-      deadline: "2024-02-20",
-      status: "In Progress",
+      deadline: "20-02-2024",
+      status: "Em Andamento",
       avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=40&h=40&fit=crop&crop=face",
       rating: 4.9
     },
     {
       id: 2,
-      title: "Website Redesign",
+      title: "Redesign de Website",
       freelancer: "Marcus Rodriguez",
       budget: 5000,
       spent: 2500,
       progress: 50,
-      deadline: "2024-02-25",
-      status: "In Progress",
+      deadline: "25-02-2024",
+      status: "Em Andamento",
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop&crop=face",
       rating: 4.8
     },
     {
       id: 3,
-      title: "Content Writing",
+      title: "Redação de Conteúdo",
       freelancer: "Emily Watson",
       budget: 1500,
       spent: 300,
       progress: 20,
-      deadline: "2024-03-01",
-      status: "Starting",
+      deadline: "01-03-2024",
+      status: "Iniciando",
       avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=40&h=40&fit=crop&crop=face",
       rating: 5.0
     }
@@ -80,89 +80,89 @@ const mockData = {
   postedJobs: [
     {
       id: 1,
-      title: "React Developer for Dashboard",
-      posted: "3 days ago",
+      title: "Desenvolvedor React para Painel",
+      posted: "3 dias atrás",
       budget: "$3000-$5000",
       proposals: 15,
-      status: "Active",
-      deadline: "2024-02-15"
+      status: "Ativo",
+      deadline: "15-02-2024"
     },
     {
       id: 2,
-      title: "Logo Design for Startup",
-      posted: "1 week ago",
+      title: "Design de Logo para Startup",
+      posted: "1 semana atrás",
       budget: "$500-$1000",
       proposals: 28,
-      status: "Interviewing",
-      deadline: "2024-02-10"
+      status: "Entrevistando",
+      deadline: "10-02-2024"
     },
     {
       id: 3,
-      title: "SEO Content Writer",
-      posted: "2 weeks ago",
+      title: "Redator de Conteúdo SEO",
+      posted: "2 semanas atrás",
       budget: "$25-$45/hr",
       proposals: 43,
-      status: "Hired",
-      deadline: "Ongoing"
+      status: "Contratado",
+      deadline: "Em curso"
     }
   ],
   hiredFreelancers: [
     {
       id: 1,
       name: "Sarah Chen",
-      title: "Full-Stack Developer",
+      title: "Desenvolvedora Full-Stack",
       avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=40&h=40&fit=crop&crop=face",
       rating: 4.9,
       projectsCompleted: 8,
       totalPaid: 18500,
-      status: "Active"
+      status: "Ativo"
     },
     {
       id: 2,
       name: "Marcus Rodriguez",
-      title: "UI/UX Designer",
+      title: "Designer UI/UX",
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop&crop=face",
       rating: 4.8,
       projectsCompleted: 5,
       totalPaid: 12300,
-      status: "Active"
+      status: "Ativo"
     },
     {
       id: 3,
       name: "Emily Watson",
-      title: "Content Writer",
+      title: "Redatora de Conteúdo",
       avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=40&h=40&fit=crop&crop=face",
       rating: 5.0,
       projectsCompleted: 12,
       totalPaid: 8900,
-      status: "Available"
+      status: "Disponível"
     }
   ],
   messages: [
     {
       id: 1,
       from: "Sarah Chen",
-      subject: "Project Milestone Completed",
-      preview: "Hi! I've completed the authentication module and it's ready for review...",
-      time: "1 hour ago",
+      subject: "Marco do Projeto Concluído",
+      preview: "Olá! Concluí o módulo de autenticação e está pronto para revisão...",
+      time: "1 hora atrás",
       unread: true,
       avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=40&h=40&fit=crop&crop=face"
     },
     {
       id: 2,
       from: "Marcus Rodriguez",
-      subject: "Design Revision Request",
-      preview: "I've made the requested changes to the landing page design...",
-      time: "3 hours ago",
+      subject: "Solicitação de Revisão de Design",
+      preview: "Fiz as alterações solicitadas no design da página inicial...",
+      time: "3 horas atrás",
       unread: true,
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop&crop=face"
     },
     {
       id: 3,
       from: "David Kim",
-      subject: "New Proposal Submitted",
-      preview: "Thank you for considering my proposal for your marketing project...",
-      time: "1 day ago",
+      subject: "Nova Proposta Enviada",
+      preview: "Obrigado por considerar minha proposta para seu projeto de marketing...",
+      time: "1 dia atrás",
       unread: false,
       avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=40&h=40&fit=crop&crop=face"
     }
@@ -173,9 +173,9 @@ const mockData = {
     totalSpent: 45780,
     pendingPayments: 2100,
     recentPayments: [
-      { project: "Mobile App Development", freelancer: "Sarah Chen", amount: 2000, date: "Jan 28, 2024", status: "Completed" },
-      { project: "Logo Design", freelancer: "Marcus Rodriguez", amount: 800, date: "Jan 25, 2024", status: "Completed" },
-      { project: "Content Writing", freelancer: "Emily Watson", amount: 450, date: "Jan 22, 2024", status: "Pending" }
+      { project: "Desenvolvimento de App Mobile", freelancer: "Sarah Chen", amount: 2000, date: "28 Jan, 2024", status: "Concluído" },
+      { project: "Design de Logo", freelancer: "Marcus Rodriguez", amount: 800, date: "25 Jan, 2024", status: "Concluído" },
+      { project: "Redação de Conteúdo", freelancer: "Emily Watson", amount: 450, date: "22 Jan, 2024", status: "Pendente" }
     ]
   }
 };
@@ -211,7 +211,7 @@ export function ClientDashboard() {
           <Sidebar className="border-r">
             <SidebarContent>
               <SidebarGroup>
-                <SidebarGroupLabel>Navigation</SidebarGroupLabel>
+                <SidebarGroupLabel>Navegação</SidebarGroupLabel>
                 <SidebarGroupContent>
                   <SidebarMenu>
                     {sidebarItems.map((item) => (
@@ -253,12 +253,12 @@ function OverviewContent() {
     <div className="space-y-6">
       <div className="flex justify-between items-center">
         <div>
-          <h1 className="text-3xl font-bold text-foreground">Dashboard</h1>
-          <p className="text-muted-foreground">Manage your projects and freelancers</p>
+          <h1 className="text-3xl font-bold text-foreground">Painel</h1>
+          <p className="text-muted-foreground">Gerencie seus projetos e freelancers</p>
         </div>
         <Button className="flex items-center gap-2">
           <Plus className="h-4 w-4" />
-          Post New Job
+          Publicar Nova Vaga
         </Button>
       </div>
 
@@ -266,52 +266,52 @@ function OverviewContent() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">Total Spent</CardTitle>
+            <CardTitle className="text-sm font-medium">Total Gasto</CardTitle>
             <DollarSign className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">${mockData.stats.totalSpent.toLocaleString()}</div>
             <p className="text-xs text-muted-foreground">
-              +12% from last month
+              +12% em relação ao mês passado
             </p>
           </CardContent>
         </Card>
 
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">Active Projects</CardTitle>
+            <CardTitle className="text-sm font-medium">Projetos Ativos</CardTitle>
             <Briefcase className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">{mockData.stats.activeProjects}</div>
             <p className="text-xs text-muted-foreground">
-              {mockData.stats.completedProjects} completed total
+              {mockData.stats.completedProjects} concluídos no total
             </p>
           </CardContent>
         </Card>
 
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">Hired Freelancers</CardTitle>
+            <CardTitle className="text-sm font-medium">Freelancers Contratados</CardTitle>
             <Users className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">{mockData.stats.hiredFreelancers}</div>
             <p className="text-xs text-muted-foreground">
-              Avg rating: {mockData.stats.avgProjectRating}/5.0
+              Avaliação média: {mockData.stats.avgProjectRating}/5.0
             </p>
           </CardContent>
         </Card>
 
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">Posted Jobs</CardTitle>
+            <CardTitle className="text-sm font-medium">Vagas Publicadas</CardTitle>
             <FileText className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">{mockData.stats.ongoingJobs}</div>
             <p className="text-xs text-muted-foreground">
-              Currently active
+              Atualmente ativas
             </p>
           </CardContent>
         </Card>
@@ -321,7 +321,7 @@ function OverviewContent() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <Card>
           <CardHeader>
-            <CardTitle>Active Projects</CardTitle>
+            <CardTitle>Projetos Ativos</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
             {mockData.activeProjects.slice(0, 3).map((project) => (
@@ -337,7 +337,7 @@ function OverviewContent() {
                 </div>
                 <div className="text-right">
                   <p className="text-sm font-medium">${project.spent}/${project.budget}</p>
-                  <p className="text-xs text-muted-foreground">{project.progress}% complete</p>
+                  <p className="text-xs text-muted-foreground">{project.progress}% concluído</p>
                 </div>
               </div>
             ))}
@@ -346,7 +346,7 @@ function OverviewContent() {
 
         <Card>
           <CardHeader>
-            <CardTitle>Recent Messages</CardTitle>
+            <CardTitle>Mensagens Recentes</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
             {mockData.messages.slice(0, 3).map((message) => (
@@ -381,10 +381,10 @@ function ProjectsContent() {
     <div className="space-y-6">
       <div className="flex justify-between items-center">
         <div>
-          <h1 className="text-3xl font-bold">Active Projects</h1>
-          <p className="text-muted-foreground">Monitor your ongoing projects</p>
+          <h1 className="text-3xl font-bold">Projetos Ativos</h1>
+          <p className="text-muted-foreground">Monitore seus projetos em andamento</p>
         </div>
-        <Button>View All Projects</Button>
+        <Button>Ver Todos os Projetos</Button>
       </div>
 
       <div className="space-y-4">
@@ -400,7 +400,7 @@ function ProjectsContent() {
                     </Avatar>
                     <div>
                       <h3 className="font-semibold">{project.title}</h3>
-                      <p className="text-sm text-muted-foreground">by {project.freelancer}</p>
+                      <p className="text-sm text-muted-foreground">por {project.freelancer}</p>
                       <div className="flex items-center space-x-1 mt-1">
                         <Star className="h-3 w-3 fill-yellow-400 text-yellow-400" />
                         <span className="text-xs">{project.rating}</span>
@@ -410,7 +410,7 @@ function ProjectsContent() {
                   
                   <div className="space-y-2">
                     <div className="flex justify-between text-sm">
-                      <span>Progress</span>
+                      <span>Progresso</span>
                       <span>{project.progress}%</span>
                     </div>
                     <Progress value={project.progress} />
@@ -427,14 +427,14 @@ function ProjectsContent() {
                         <span>{project.deadline}</span>
                       </div>
                     </div>
-                    <Badge variant={project.status === 'In Progress' ? 'default' : 'secondary'}>
+                    <Badge variant={project.status === 'Em Andamento' ? 'default' : 'secondary'}>
                       {project.status}
                     </Badge>
                   </div>
 
                   <div className="flex space-x-2">
-                    <Button size="sm">Message</Button>
-                    <Button size="sm" variant="outline">View Details</Button>
+                    <Button size="sm">Enviar Mensagem</Button>
+                    <Button size="sm" variant="outline">Ver Detalhes</Button>
                   </div>
                 </div>
               </div>
@@ -451,12 +451,12 @@ function JobsContent() {
     <div className="space-y-6">
       <div className="flex justify-between items-center">
         <div>
-          <h1 className="text-3xl font-bold">Posted Jobs</h1>
-          <p className="text-muted-foreground">Manage your job postings</p>
+          <h1 className="text-3xl font-bold">Vagas Publicadas</h1>
+          <p className="text-muted-foreground">Gerencie suas vagas abertas</p>
         </div>
         <Button className="flex items-center gap-2">
           <Plus className="h-4 w-4" />
-          Post New Job
+          Publicar Nova Vaga
         </Button>
       </div>
 
@@ -468,23 +468,23 @@ function JobsContent() {
                 <div className="space-y-2">
                   <h3 className="font-semibold">{job.title}</h3>
                   <div className="flex items-center space-x-4 text-sm text-muted-foreground">
-                    <span>Posted {job.posted}</span>
-                    <span>Budget: {job.budget}</span>
-                    <span>{job.proposals} proposals</span>
-                    <span>Deadline: {job.deadline}</span>
+                    <span>Publicada {job.posted}</span>
+                    <span>Orçamento: {job.budget}</span>
+                    <span>{job.proposals} propostas</span>
+                    <span>Prazo: {job.deadline}</span>
                   </div>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Badge 
                     variant={
-                      job.status === 'Active' ? 'default' :
-                      job.status === 'Interviewing' ? 'secondary' :
+                      job.status === 'Ativo' ? 'default' :
+                      job.status === 'Entrevistando' ? 'secondary' :
                       'outline'
                     }
                   >
                     {job.status}
                   </Badge>
-                  <Button size="sm" variant="outline">View Proposals</Button>
+                  <Button size="sm" variant="outline">Ver Propostas</Button>
                 </div>
               </div>
             </CardContent>
@@ -500,10 +500,10 @@ function FreelancersContent() {
     <div className="space-y-6">
       <div className="flex justify-between items-center">
         <div>
-          <h1 className="text-3xl font-bold">Hired Freelancers</h1>
-          <p className="text-muted-foreground">Your trusted freelancer network</p>
+          <h1 className="text-3xl font-bold">Freelancers Contratados</h1>
+          <p className="text-muted-foreground">Sua rede de freelancers de confiança</p>
         </div>
-        <Button>Find New Freelancers</Button>
+        <Button>Encontrar Novos Freelancers</Button>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -527,24 +527,24 @@ function FreelancersContent() {
 
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
-                  <span>Projects Completed</span>
+                  <span>Projetos Concluídos</span>
                   <span>{freelancer.projectsCompleted}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>Total Paid</span>
+                  <span>Total Pago</span>
                   <span>${freelancer.totalPaid.toLocaleString()}</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Status</span>
-                  <Badge variant={freelancer.status === 'Active' ? 'default' : 'secondary'}>
+                  <Badge variant={freelancer.status === 'Ativo' ? 'default' : 'secondary'}>
                     {freelancer.status}
                   </Badge>
                 </div>
               </div>
 
               <div className="flex space-x-2 mt-4">
-                <Button size="sm" className="flex-1">Message</Button>
-                <Button size="sm" variant="outline" className="flex-1">Hire Again</Button>
+                <Button size="sm" className="flex-1">Enviar Mensagem</Button>
+                <Button size="sm" variant="outline" className="flex-1">Contratar Novamente</Button>
               </div>
             </CardContent>
           </Card>
@@ -558,8 +558,8 @@ function MessagesContent() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-3xl font-bold">Messages</h1>
-        <p className="text-muted-foreground">Communicate with your freelancers</p>
+        <h1 className="text-3xl font-bold">Mensagens</h1>
+        <p className="text-muted-foreground">Comunique-se com seus freelancers</p>
       </div>
 
       <div className="space-y-4">
@@ -578,7 +578,7 @@ function MessagesContent() {
                   </div>
                   <h4 className="text-sm font-medium">{message.subject}</h4>
                   <p className="text-sm text-muted-foreground">{message.preview}</p>
-                  <Button size="sm" variant="outline">Reply</Button>
+                  <Button size="sm" variant="outline">Responder</Button>
                 </div>
                 {message.unread && (
                   <div className="h-3 w-3 rounded-full bg-primary"></div>
@@ -596,45 +596,45 @@ function PaymentsContent() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-3xl font-bold">Payments</h1>
-        <p className="text-muted-foreground">Track your spending and payments</p>
+        <h1 className="text-3xl font-bold">Pagamentos</h1>
+        <p className="text-muted-foreground">Acompanhe seus gastos e pagamentos</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <Card>
           <CardHeader>
-            <CardTitle>This Month</CardTitle>
+            <CardTitle>Este Mês</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">${mockData.payments.thisMonth.toLocaleString()}</div>
-            <p className="text-sm text-blue-600">+11% from last month</p>
+            <p className="text-sm text-blue-600">+11% em relação ao mês passado</p>
           </CardContent>
         </Card>
 
         <Card>
           <CardHeader>
-            <CardTitle>Total Spent</CardTitle>
+            <CardTitle>Total Gasto</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">${mockData.payments.totalSpent.toLocaleString()}</div>
-            <p className="text-sm text-blue-600">Across all projects</p>
+            <p className="text-sm text-blue-600">Em todos os projetos</p>
           </CardContent>
         </Card>
 
         <Card>
           <CardHeader>
-            <CardTitle>Pending</CardTitle>
+            <CardTitle>Pendente</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">${mockData.payments.pendingPayments.toLocaleString()}</div>
-            <p className="text-sm text-muted-foreground">Awaiting approval</p>
+            <p className="text-sm text-muted-foreground">Aguardando aprovação</p>
           </CardContent>
         </Card>
       </div>
 
       <Card>
         <CardHeader>
-          <CardTitle>Recent Payments</CardTitle>
+          <CardTitle>Pagamentos Recentes</CardTitle>
         </CardHeader>
         <CardContent>
           <div className="space-y-4">
@@ -642,11 +642,11 @@ function PaymentsContent() {
               <div key={index} className="flex items-center justify-between py-2 border-b last:border-0">
                 <div>
                   <p className="font-medium">{payment.project}</p>
-                  <p className="text-sm text-muted-foreground">to {payment.freelancer} • {payment.date}</p>
+                  <p className="text-sm text-muted-foreground">para {payment.freelancer} • {payment.date}</p>
                 </div>
                 <div className="text-right">
                   <p className="font-medium">${payment.amount}</p>
-                  <Badge variant={payment.status === 'Completed' ? 'outline' : 'secondary'}>
+                  <Badge variant={payment.status === 'Concluído' ? 'outline' : 'secondary'}>
                     {payment.status}
                   </Badge>
                 </div>
