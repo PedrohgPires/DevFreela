@@ -23,6 +23,7 @@ const steps = [
 
 export function HowItWorks() {
   return (
+    <section id="how-it-works" className="py-16 md:py-24">
     <section className="py-16 md:py-24">
       <div className="w-full mx-auto max-w-screen-xl px-4 md:px-6">
         <div className="text-center">
@@ -62,6 +63,7 @@ export function HowItWorks() {
           })}
         </div>
       </div>
+    </section>
     </section>
   );
 }

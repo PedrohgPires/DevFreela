@@ -1,9 +1,11 @@
 import { useState, createContext, useContext } from 'react';
 import React from 'react';
 
-export type Page = 'home' | 'login' | 'signup' | 'find-work' | 'find-freelancers' | 'freelancer-dashboard' | 'client-dashboard';
+// Adicionado 'help-center' no tipo Page
+export type Page = 'home' | 'login' | 'signup' | 'find-work' | 'find-freelancers' | 'freelancer-dashboard' | 'client-dashboard' | 'help-center';
 
 export type UserType = 'freelancer' | 'client' | null;
+
 
 interface User {
   id: string;
@@ -41,7 +43,6 @@ export function Router({ children }: { children: React.ReactNode }) {
 
   const login = (userData: User) => {
     setUser(userData);
-    // Redirect to appropriate dashboard based on user type
     if (userData.type === 'freelancer') {
       setCurrentPage('freelancer-dashboard');
     } else if (userData.type === 'client') {

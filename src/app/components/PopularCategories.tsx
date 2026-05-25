@@ -62,6 +62,7 @@ const categories = [
 
 export function PopularCategories() {
   return (
+    <section id="popular-categories" className="py-16 md:py-24">
     <section className="py-16 md:py-24">
       <div className="w-full mx-auto max-w-screen-xl px-4 md:px-6">
         <div className="text-center">
@@ -96,6 +97,7 @@ export function PopularCategories() {
           })}
         </div>
       </div>
+    </section>
     </section>
   );
 }

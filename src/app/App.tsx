@@ -15,6 +15,7 @@ import { LoginPage } from "./components/LoginPage";
 import { SignUpPage } from "./components/SignUpPage";
 import { ClientDashboard } from "./components/ClientDashboard";
 import { FreelancerDashboard } from "./components/FreelancerDashboard";
+import { HelpCenter } from "./components/HelpCenter";
 
 import { useRouter } from "./components/Router";
 
@@ -46,6 +47,7 @@ export default function App() {
         {currentPage === 'signup' && <SignUpPage />}
         {currentPage === 'client-dashboard' && <ClientDashboard />}
         {currentPage === 'freelancer-dashboard' && <FreelancerDashboard />}
+        {currentPage === 'help-center' && <HelpCenter />}
       </main>
 
       {/* O rodapé fica fixo no final de tudo */}
